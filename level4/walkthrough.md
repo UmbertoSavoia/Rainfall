@@ -109,7 +109,7 @@ passare all'esecuzione della funzione `system`:
 ```
 python -c 'print ("\x10\x98\x04\x08" + "%16930112d%12$n")' | ./level4
 ```
-Le uniche differenze rispetto all'exploit del livello successivo sono:
+Le uniche differenze rispetto all'exploit del livello precedente sono:
 1. Uso `12$` così che `%n` prenda direttamente il dodicesimo argomento così evito di scrivere 11 `%x`
 2. Uso `%16930112d` per stampare il restante numero di caratteri invece di scrivere 16930112 volte un qualsiasi carattere
 
