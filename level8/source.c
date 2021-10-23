@@ -30,7 +30,7 @@ int     main(void)
         if (!strncmp(s, "reset", 5))
             free(auth);
         if (!strncmp(s, "service", 6))
-            service = strdup(line + 7);
+            service = strdup(s + 7);
         if (!strncmp(s, "login", 5))
         {
             if (auth->flag)
